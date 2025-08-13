@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 class Administradores(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
-    IdAdmin = models.IntegerField(primary_key=True)
+    IdAdmin = models.AutoField(primary_key=True)
     NameAdmin = models.TextField()
     EmailAdmin = models.TextField()
     PhoneAdmin = models.TextField()
