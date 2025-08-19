@@ -1,7 +1,7 @@
 from django.urls import path,include
-from .views import loginApiView
+from .views import CustomTokenObtainPairView
 from rest_framework import routers
 
 urlpatterns =[
-    path('', loginApiView.as_view(), name='login')
+    path('', CustomTokenObtainPairView.as_view(), name='login')
 ]

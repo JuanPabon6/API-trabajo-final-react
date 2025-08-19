@@ -8,7 +8,7 @@ from App.permissions import AdminOrReadOnly
 class RolesViewSets(viewsets.ModelViewSet):
     queryset = Roles.objects.all()
     serializer_class = RolesSerializers
-    permission_classes = [AdminOrReadOnly]
+    permission_classes = [permissions.IsAuthenticated]
     authentication_classes = [JWTAuthentication]
 
 # Create your views here.

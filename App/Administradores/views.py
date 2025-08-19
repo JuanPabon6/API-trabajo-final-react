@@ -12,7 +12,7 @@ class AdministradoresViewSets(viewsets.ModelViewSet):
     queryset = Administradores.objects.all()
     serializer_class = AdministradoresSerializer
     # authentication_classes = [JWTAuthentication]
-    permission_classes = []
+    permission_classes = [permissions.AllowAny]
 
     
 

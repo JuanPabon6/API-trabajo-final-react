@@ -1,7 +1,7 @@
 from django.db import models
 
 class Categorias(models.Model):
-    IdCategoria = models.IntegerField(primary_key=True)
+    IdCategoria = models.AutoField(primary_key=True)
     NameCategoria = models.TextField()
 
     class Meta:

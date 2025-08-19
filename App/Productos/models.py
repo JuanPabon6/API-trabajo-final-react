@@ -1,10 +1,11 @@
 from django.db import models
+from App.Categorias.models import Categorias
 
 class Producto(models.Model):
-    IdProducto = models.IntegerField(primary_key=True)
+    IdProducto = models.AutoField(primary_key=True)
     NameProducto = models.TextField()
     PriceProducto = models.FloatField()
-    # CategoryId = models.ForeignKey()
+    CategoryId = models.ForeignKey(Categorias, on_delete=models.CASCADE, default=1)
     ImageUrl = models.TextField()
 
     class Meta:

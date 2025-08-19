@@ -8,7 +8,7 @@ from App.permissions import AdminOrReadOnly
 class ProductosViewSets(viewsets.ModelViewSet):
     queryset = Producto.objects.all()
     serializer_class = ProductosSerializers
-    permission_classes = [AdminOrReadOnly]
-    authentication_classes = [JWTAuthentication]
+    permission_classes = [permissions.AllowAny]
+    # authentication_classes = [JWTAuthentication]
 
 # Create your views here.

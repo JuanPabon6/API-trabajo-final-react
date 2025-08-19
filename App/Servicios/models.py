@@ -1,7 +1,7 @@
 from django.db import models
 
 class Servicios(models.Model):
-    IdServicio = models.IntegerField(primary_key=True)
+    IdServicio = models.AutoField(primary_key=True)
     NameServicio = models.TextField()
     DescriptionServicio = models.TextField()
     PriceServicio = models.FloatField()
