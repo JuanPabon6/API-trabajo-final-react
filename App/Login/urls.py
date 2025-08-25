@@ -1,5 +1,5 @@
 from django.urls import path,include
-from .views import CustomTokenObtainPairView
+from .views import CustomTokenObtainPairView, LogoutView
 from rest_framework import routers
 
 urlpatterns =[

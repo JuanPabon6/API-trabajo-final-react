@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'App.Productos',
     'App.Roles',
     'App.Servicios',
-    'App.Login'
+    'App.Login',
+    'rest_framework_simplejwt.token_blacklist'
 ]
 
 MIDDLEWARE = [
